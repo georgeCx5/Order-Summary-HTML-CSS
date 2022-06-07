@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*
+{
+    font-family: 'Red Hat Display', sans-serif;
+    --brightBlue: hsl(245, 75%, 52%);
+    --brightBlueLowOp: hsla(245, 75%, 52%, 0.2);
+    --darkBlue: hsl(223, 47%, 23%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --paleBlue: hsl(225, 100%, 94%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+}
+:root
+{
+    background-color: var(--paleBlue);
+}
+.padre
+{
+    background-color: white;
+    height: 700px;
+    width: 450px;
+    margin: 125px auto;
+    border-radius: 16px;
+}
+.hijo-img
+{
+    background-image: url(./images/illustration-hero.svg);
+    height: 220px;
+    width: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-size: cover;
+    filter: hue-rotate(15deg);
+}
+.hijo-titulo
+{
+    color: var(--darkBlue);
+    text-align: center;
+    margin: 40px 0px 25px 0px;
+}
+.hijo-descripcion
+{
+    color: var(--desaturatedBlue);
+    text-align: center;
+    margin: 25px 60px;
+}
+.plan-anual
+{
+    background-color: var(--veryPaleBlue);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+.plan-icono
+{
+    background-image: url(./images/icon-music.svg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin: auto 5px;
+}
+.plan-texto
+{
+    text-align: left;
+    margin: auto 15px;
+    color: var(--darkBlue);
+}
+.plan-titulo, .plan-precio
+{
+    font-size: medium;
+    margin: 5px auto;
+}
+.plan-titulo
+{
+    font-weight: 900;
+}
+.plan-precio
+{
+    color: var(--desaturatedBlue);
+    font-weight: 700;
+}
+.plan-cambio
+{
+    color: var(--brightBlue);
+    font-weight: bolder;
+    text-decoration: underline;
+    margin: auto auto auto 50px;
+}
+.pago
+{
+    margin: 25px 50px;
+}
+.pago-aceptar, .pago-cancelar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bolder;
+    margin: 20px 0px;
+}
+.pago-aceptar
+{
+    background-color: var(--brightBlue);
+    border-radius: 12px;
+    color: var(--veryPaleBlue);
+    box-shadow: var(--brightBlue);
+    box-shadow: 0px 25px 25px 0px var(--brightBlueLowOp);
+}
+.pago-cancelar
+{
+    color: var(--desaturatedBlue);
+}
+
+/* .attribution 
+{
+    font-size: 14px;
+    text-align: center;
+}
+.attribution a 
+{
+    color: hsl(228, 45%, 44%);
+} */
